@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Badaboom'; 
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #2c2c2c, #ff0000);
+}
+
+header {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: hsl(0, 0%, 20%);
+    /* Si queremos que se vea haciendo scroll: 
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    */
+    background-color: black;
+}
+
+header h1 {
+    color: white;
+}
+
+header img {
+    height: 200px;
+    padding-left: 20%;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Importamos un tipo de letra */
+@import url('https://fonts.googleapis.com/css2?family=Badaboom&display=swap');
+header nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: perspective(1px);
+    font-size: 30px;
+    font-family: 'Badaboom'; 
+}
+
+/* Efecto al pasar el cursor */
+header nav a:hover {
+    color: #ff0000; 
+    transform: scale(1.1) rotate(-5deg); 
+}
+
+
+.bienvenida{
+    padding: 10%;
+    background-image: url('imagenes/fondo.jpg');
+    background-size: cover;
+    background-position: center; 
+    text-align: center; 
+    color: white;
+}
+
+.tituloYTexto{
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 20px;
+    border-radius: 9px; 
+    font-size: 20px;
+    font-family: 'Badaboom'; 
+    color: #000;
+}
+
+.logoBienvenida{
+    width: 400px;
+    border-radius: 50%;
+}
+
+/* Aplicamos estilos al video */
+.styled-video {
+    width: 100%; 
+    max-width: 800px; 
+    height: auto; 
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 10px 80px rgba(0, 0, 0, 0.2); 
+    margin: 20px auto; 
+    display: block; 
+}
+
+
+main .video{
+    padding: 20px;
+    text-align: center;
+}
+
+main .video video {
+    width: 100%;
+    max-width: 1000px; 
+}
+
+main h2{
+    text-align: center;
+}
+
+.Peliculas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px; 
+}
+
+.Peliculas img{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.divPeliculas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 200px;
+    grid-row-gap: 100px;
+}
+
+/* Foto superpuesta con efecto: */
+.Peliculas .div1,
+.Peliculas .div2,
+.Peliculas .div3,
+.Peliculas .div4,
+.Peliculas .div5,
+.Peliculas .div6,
+.Peliculas .div7,
+.Peliculas .div8 {
+    position: relative;
+}
+
+.Peliculas .div1 img:nth-child(2),
+.Peliculas .div2 img:nth-child(2),
+.Peliculas .div3 img:nth-child(2),
+.Peliculas .div4 img:nth-child(2),
+.Peliculas .div5 img:nth-child(2),
+.Peliculas .div6 img:nth-child(2),
+.Peliculas .div7 img:nth-child(2),
+.Peliculas .div8 img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
+}
+
+.Peliculas .div1:hover img:nth-child(2),
+.Peliculas .div2:hover img:nth-child(2),
+.Peliculas .div3:hover img:nth-child(2),
+.Peliculas .div4:hover img:nth-child(2),
+.Peliculas .div5:hover img:nth-child(2),
+.Peliculas .div6:hover img:nth-child(2),
+.Peliculas .div7:hover img:nth-child(2),
+.Peliculas .div8:hover img:nth-child(2) {
+    transform: scale(1.05); 
+}
+
+
+
+
+/* Procedemos hacer las media querys: */
+@media (max-width: 750px) {
+    .Peliculas img{
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .divPeliculas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 100px;
+        grid-row-gap: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .Peliculas img{
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .divPeliculas {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 10px;
+    }
+}
