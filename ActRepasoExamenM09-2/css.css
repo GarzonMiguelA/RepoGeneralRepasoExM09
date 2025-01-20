@@ -21,10 +21,19 @@ header nav a {
 }
 
 header nav a:hover {
-    background-color: blue;
+    background-color: rgb(131, 131, 131);
     color: black;
-    transition: 0.05s;
-    border-radius: 20px;
+    transition: 1s;
+    border-radius: 50px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    /* Situamos a la izquierda */
+    float: right;
+    margin-top: -115px;
 }
 
 main{
@@ -46,15 +55,132 @@ main .tit2{
     grid-row-gap: 10px;
 }
 
-/* .parent {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(4, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-} */
+/* Ponemos un encuadre con borde y fondo gris */
+.Fotos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+/* Transiciones al pasar el raton */
+.Fotos div img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 5px 5px 5px black;
+}
+
+/* Transicion al quitar el raton */
+.Fotos div img{
+    transition: transform 1s, box-shadow 1s;
+}
+
+/* Ponemos h2 y p en el centro */
+.Fotos div h2, .Fotos div p {
+    text-align: center;
+}
 
 .imgContainer{
     height: 400px;
     width: 400px;
+}
+
+footer div{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+footer div img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    transition: 1s;
+}
+
+footer div img:hover {
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+/* Cuando la pantalla este entre 1500 y 1600 de anchura se haran 3 filas 3 columans */
+@media (min-width: 1200px) {
+    .Fotos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+}
+
+/* Cuando la pantalla este entre 1000 y 1399 de anchura se haran 4 filas 2 columans */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .Fotos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo {
+        order: -1; /* Mueve el logo al principio */
+        margin-top: 0; /* Ajusta el margen si es necesario */
+    }
+
+    header h1 {
+        order: 0; /* Asegura que el título esté después del logo */
+    }
+
+    .Fotos div {
+        border: 1px solid black;
+        padding: 5px;
+        background-color: #f1f1f1;
+    }
+
+}
+
+/* Cuando la pantalla este entre 1 y 99 de anchura se haran 8 filas 1 columans */
+@media (min-width: 1px) and (max-width: 767px) {
+    .Fotos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo {
+        order: -1; /* Mueve el logo al principio */
+        margin-top: 0; /* Ajusta el margen si es necesario */
+    }
+
+    header h1 {
+        order: 0; /* Asegura que el título esté después del logo */
+    }
+
+    .Fotos div {
+        border: 1px solid black;
+        padding: 5px;
+        background-color: #f1f1f1;
+    }
 }
