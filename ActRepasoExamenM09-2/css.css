@@ -17,7 +17,6 @@ header nav a {
     padding: 1%;
     font-size: 1.3em;
     background: none; 
-    
 }
 
 header nav a:hover {
@@ -64,6 +63,7 @@ main .tit2{
     border: 1px solid black;
     padding: 10px;
     background-color: #f1f1f1;
+    position: relative;
 }
 
 /* Transiciones al pasar el raton */
@@ -71,6 +71,7 @@ main .tit2{
     transform: scale(1.1);
     transition: 1s;
     box-shadow: 5px 5px 5px black;
+    opacity: 0.8;
 }
 
 /* Transicion al quitar el raton */
@@ -86,6 +87,23 @@ main .tit2{
 .imgContainer{
     height: 400px;
     width: 400px;
+}
+
+.Fotos div .textoOculto {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; 
+    opacity: 0; 
+}
+
+.Fotos div:hover .textoOculto {
+    display: block;
+    opacity: 1; 
+    transform: translate(-50%, -50%) translateY(0); 
 }
 
 footer div{
