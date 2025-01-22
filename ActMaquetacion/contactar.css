@@ -1,0 +1,100 @@
+* {
+    background-color: #eaeaea;
+ }
+ 
+ header {
+    background-color: #eaeaea;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+ }
+ 
+ nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+ }
+ 
+ nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 5px 20px;
+    border: 2px solid #4e4e4e;
+    background-color: #4e4e4e;
+    border-radius: 5px;
+ }
+ 
+ nav a:hover {
+    border: 2px solid #e64b08;
+    background-color: #e64b08;
+    border-radius: 5px;
+    transition: 0.5s;
+ }
+ 
+ section {
+    width: 50%;
+    margin: 0 auto;
+ }
+ 
+ form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+ }
+ 
+ form div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 15px; /* Espaciado entre el label y el input */
+ }
+ 
+ form label {
+    font-weight: bold;
+    color: #333;
+    width: 30%; /* Ajusta el tamaño del label */
+    text-align: left;
+ }
+ 
+ form input[type="text"],
+ form input[type="email"],
+ form textarea {
+    width: 65%; /* Ajusta el tamaño del input */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+ }
+ 
+ form textarea {
+    height: 150px;
+    resize: none;
+ }
+ 
+ .Enviar {
+    background-color: #4e4e4e;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ 
+ footer {
+    background-color: #eaeaea;
+    padding: 10px 0;
+    height: 100px;
+    width: 55%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+ }

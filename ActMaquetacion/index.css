@@ -1,0 +1,221 @@
+/* section img {
+width: 100%;
+height: auto;
+} */
+
+* {
+    background-color: #eaeaea;
+ }
+ 
+ header {
+    background-color: #eaeaea;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+ }
+ 
+ nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+ 
+ 
+ }
+ 
+ 
+ nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 5px 20px;
+    border: 2px solid #4e4e4e;
+    background-color: #4e4e4e;
+    border-radius: 5px;
+ }
+ 
+ 
+ nav a:hover {
+    border: 2px solid #e64b08;
+    background-color: #e64b08;
+    border-radius: 5px;
+    transition: 0.5s;
+ }
+ 
+ 
+ .slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+ }
+ 
+ .slides {
+    display: flex;
+    width: 100%;
+    animation: slide 20s infinite;
+ }
+ 
+ .slides img {
+    width: 100%;
+    height: 100%;
+ }
+ 
+ /* Animacion automática */
+ @keyframes slide {
+    0% {
+       transform: translateX(0);
+    }
+ 
+    33% {
+       transform: translateX(-100%);
+    }
+ 
+    66% {
+       transform: translateX(-200%);
+    }
+ 
+    100% {
+       transform: translateX(0);
+    }
+ }
+ 
+ .sobreHumans {
+    width: 55%;
+    height: 300px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+ }
+ 
+ 
+ .queEs,
+ .porqueTxt {
+    display: flex;
+    margin-left: -20px;
+    width: 50%;
+ }
+ 
+ 
+ .queEs img,
+ .porqueTxt img {
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+ }
+ 
+ 
+ .queEs p {
+    margin-left: 20px;
+ }
+ 
+ 
+ .porqueTxt {
+    display: flex;
+    margin-left: -20px;
+    width: 50%;
+ }
+ 
+ .porqueTxt p {
+    margin-left: 20px;
+ 
+ }
+ 
+ 
+ .sobreHumans .porqueTxt {
+    float: right;
+    margin-top: -160px;
+ }
+ 
+ 
+ .porqueTxt img {
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+ }
+ 
+ .grid-layout {
+    width: 55%;
+    height: 300px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    margin-bottom: 300px;
+    margin-top: -50px;
+ }
+ 
+ .grid-layout div {
+    background-color: white;
+    padding: 10px;
+    height: 250px;
+    background-color: white;
+ }
+ 
+ .grid-layout div img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+ }
+ 
+ .grid-layout div h5 {
+    background-color: white;
+ }
+ 
+ .grid-layout p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    background-color: white;
+ 
+ }
+ 
+ 
+ .tit-sobreHumans {
+    font-family: 'Courier New', Courier, monospace;
+    color: #bb7155;
+    border-bottom: grey solid 1px;
+ }
+ 
+ 
+ /* Estilos footer */
+ footer {
+    background-color: #eaeaea;
+    padding: 10px 0;
+    height: 100px;
+    width: 55%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ /* footer .derecha p {
+ width: 30%;
+ text-align: right;
+ margin: 0 auto;
+ } */
+ 
+ /* footer .izquierda {
+    width: 20%; 
+ 
+ }
+ 
+ footer .centro {
+ width: 60%;
+ text-align: center;
+ margin: 0 auto;
+ }
+ */
