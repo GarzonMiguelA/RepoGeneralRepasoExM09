@@ -84,61 +84,17 @@ main {
     color: white;
 }
 
+/* Estilos formulario */
 
-
-
-
-
-
-
-/* Estilos de Proyectos */
-
-.tit2{
-   text-align: center;
-}
-
-section .ClubBoxeo {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    padding: 5%;
+.formulario {
+    padding: 10%;
+    background-color: black;
+    color: white;
     text-align: center;
-    background-color: gray;
-    border: 2px solid;
-    border-radius: 15px; 
-    width: 800px; 
-    height: 800px; 
-    margin: 0 auto; /* Centramos el cuadrado de forma horizontal*/
-    overflow: hidden; /* Ocultamos el contenido que sobresalga del cuadro */
 }
 
-.imgContainer {
-    width: 100%; /* Ajusta la imagen al ancho del contenedor */
-    border-radius: 10px; /* Bordes redondeados para la imagen */
-}
 
-.parent{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.parent .Calendario, .parent .Idealista{
-    padding: 5%;
-    text-align: center;
-    background-color: gray;
-    border: 2px solid;
-    border-radius: 15px; 
-    width: 800px; 
-    height: 800px; 
-    margin: 0 auto; /* Centramos el cuadrado de forma horizontal*/
-    overflow: hidden; /* Ocultamos el contenido que sobresalga del cuadro */
-    margin-bottom: 50px;
-}
+/* Estilos footer */
 
 footer{
     background-color: black;
