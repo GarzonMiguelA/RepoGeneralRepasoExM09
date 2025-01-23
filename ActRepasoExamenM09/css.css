@@ -1,14 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Badaboom'; 
-}
-
-body {
-    height: 100vh;
-    background: linear-gradient(to right, #2c2c2c, #ff0000);
-}
 
 header {
     height: 20%;
@@ -16,13 +5,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 20px;
-    background-color: hsl(0, 0%, 20%);
-    /* Si queremos que se vea haciendo scroll: 
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    */
-    background-color: black;
+    background-color: hsl(0, 1%, 52%);
 }
 
 header h1 {
@@ -45,8 +28,6 @@ header nav {
     font-family: Arial, sans-serif;
 }
 
-/* Importamos un tipo de letra */
-@import url('https://fonts.googleapis.com/css2?family=Badaboom&display=swap');
 header nav a {
     text-decoration: none;
     color: white;
