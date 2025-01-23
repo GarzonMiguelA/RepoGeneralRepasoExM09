@@ -1,0 +1,52 @@
+.card-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 300px;
+}
+
+.targeta {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /* Habilita perspectiva 3D */
+    margin: 10px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; /* Mantiene las caras juntas */
+    transition: transform 1s;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    transform: rotateY(180deg); /* Rota la tarjeta al pasar el mouse */
+}
+
+.card .front, .card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta la cara trasera cuando no es visible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.card .front {
+    background: linear-gradient(to top, #FFD700, #353434);
+    color: #fff;
+}
+
+.card .back {
+    background: linear-gradient(to bottom, #353434, #FFD700);
+    color: #FFD700;
+    transform: rotateY(180deg); /* La cara trasera debe estar invertida */
+}
