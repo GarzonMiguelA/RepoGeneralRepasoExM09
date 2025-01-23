@@ -85,12 +85,56 @@ main {
 }
 
 /* Estilos formulario */
+ 
+section {
+    width: 50%;
+    margin: 0 auto;
+}
 
-.formulario {
-    padding: 10%;
-    background-color: black;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 15px; /* Espaciado entre el label y el input */
+}
+
+form label {
+    font-weight: bold;
     color: white;
-    text-align: center;
+    width: 30%; /* Ajusta el tamaño del label */
+    text-align: left;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 65%; /* Ajusta el tamaño del input */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.Enviar {
+    background-color: #4e4e4e;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 

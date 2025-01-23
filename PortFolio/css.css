@@ -30,24 +30,45 @@ header img {
     width: 100px;
     height: 100px;
     margin-right: 20px;
+    transition: color 0.3s ease, transform 1s ease;
+}
+
+header img:hover{
+    transform: scale(1.5) rotate(-359deg); 
 }
 
 header h1 {
     margin: 0;
+    transition: color 0.3s ease, transform 4s ease;
+    transform-origin: left; /* Cambia el punto de origen de la transformación al borde izquierdo */
+
+}
+
+header h1:hover{
+    color: #FFD700; 
+    transform: scaleX(1.5); 
+    transition: color 0.3s ease, transform 5s ease;
 }
 
 header nav {
     margin-left: auto;
+    display: flex;
+
 }
 
 header nav a {
     text-decoration: none;
     color: white;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease, transform 1s ease;
     transform: perspective(1px);
     font-size: 20px;
     font-family: 'Badaboom'; 
     margin-right: 20px; 
+}
+
+header nav a:hover {
+    color: red;
+    transform: scale(1.5) rotate(30deg); 
 }
 
 main {
@@ -95,6 +116,13 @@ main {
 
 .tit2{
    text-align: center;
+}
+
+.NombreProyecto{
+    font-size: 20px;
+    font-family: 'Badaboom'; 
+    color: white;
+    text-decoration: none;
 }
 
 section .ClubBoxeo {
